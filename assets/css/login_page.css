@@ -1,0 +1,114 @@
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: rgb(53,56,57);
+}
+
+
+#logo-container {
+    position: absolute;
+    width: 100%;
+    top: 10rem;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 0;
+}
+.logo-title {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.form {
+    padding: 5px 0;
+    background-color: 	#F4F5FA;
+}
+
+.form-input {
+    padding: 5px 10px;
+    margin: 0 20px 0 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.form-input:hover, .form-input:focus {
+    border-color: deepskyblue;
+    outline: none;
+}
+
+
+
+
+.form-label {
+    margin: 10px 10px;
+}
+
+
+.header-form {
+    background-color: 	#FFFAFA;
+}
+
+.header-submit {
+    margin: 10px 0 0 50px;
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+}
+.btn-submit {
+    background-color: #596D48;
+    color: snow;
+    border: none;
+    cursor: pointer;
+}
+
+.card-form {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    padding: 20px 0;
+}
+
+.valid {
+    background-color: #afe689;
+}
+
+
+.error {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 3px 0 0 3px;
+
+    font-size: 17px;
+    color: red;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0;
+}
+
+@media screen and (max-width: 540px) {
+    .header-submit {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+    .header-submit {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .header-submit {
+        width: 30%;
+    }
+}
+
+
+#login-link {
+    text-decoration-line: none;
+    font-size: 18px;
+    padding: 10px;
+}
+

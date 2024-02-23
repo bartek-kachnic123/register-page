@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login_page.css">
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-4">
+    <div class="container-relative">
+    <a href="https://unsplash.com/photos/flowers-beside-yellow-wall-vC8wj_Kphak?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
+    <img src="assets/images/background.jpg" alt="background" width="100%" height="100%">
+    </a>
+        <div id="logo-container">
+            <img src="assets/images/bull-stock-market-icon.svg" alt="logo">
+            <h1 class="logo-title">ODIN PROJECT</h1>
+        </div>
+    </div>
+</div>
+
+    <div class="col-6 header-form">
+        <div class="row">
+            <div class="col">
+            <h2>This is not a real online sevice! You know you need something like this in your life
+            to help you realize your deepest dreams!</h2>
+                <h2>You know you want do</h2>
+            </div>
+        </div>
+        <form class="col form" action="login_page.html" method="post" novalidate>
+            <div class="row-sm card-form">
+
+
+            <div class="col margin-right-20 row-gap">
+                <label for="input-firstname" class="form-label">FirstName</label>
+                <input type="text" name="firstname" id="input-firstname" class="form-input" minlength="2" required>
+                <span class="error" aria-live="polite"></span>
+
+                <label for="input-email" class="form-label">Email</label>
+                <input type="email" name="email" id="input-email" class="form-input" required>
+                <span class="error" aria-live="polite"></span>
+
+                <label for="input-password" class="form-label">Password
+                </label><input type="password" name="password" id="input-password" class="form-input" minlength="8" maxlength="127"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).{8,}" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="col">
+                <label for="input-lastname" class="form-label">LastName</label>
+                <input type="text" name="lastname" id="input-lastname" class="form-input" minlength="2" required>
+                <span class="error" aria-live="polite"></span>
+
+                <label for="input-telnumber" class="form-label">Phone Number</label>
+                <input type="tel" name="telnumber" id="input-telnumber" class="form-input" pattern="\d{9}">
+                <span class="error" aria-live="polite"></span>
+
+                <label for="input-password2" class="form-label">Again password
+                </label><input type="password" name="password2" id="input-password2" class="form-input" minlength="8" maxlength="127" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            </div>
+        <div class="row">
+            <div class="col-4  header-submit">
+            <button type="submit" class="btn-lg btn-submit">Register</button>
+                <a href="#" class="text-center" id="login-link">Log in</a>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<script src="assets/js/validation.js"></script>
+
+</body>
+</html>
